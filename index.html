@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ubisoft Landing Page</title>
+  <link rel="icon" type="image/x-icon" href="/images/ubisoft_logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -11,11 +12,38 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center mx-auto" href="#">
-        <img src="images/ubisoft_logo.png" alt="Ubisoft Logo" class="ubisoft-logo">
-        <span class="ms-2">UBISOFT</span>
-      </a>
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/ubisoft_logo.png" alt="Ubisoft Logo" class="ubisoft-logo">
+            <span class="ms-2" style="font-size: medium;">UBISOFT</span>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JOUER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ACHETER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EXPLORER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">AIDE</a>
+                </li>
+            </ul>
+            <div class="nav-download-container me-auto">
+                <a class="nav-download" href="#">Télécharger Ubisoft Connect<i class="fa-solid fa-arrow-down download-icon" style="text-decoration: underline;"></i></a>
+            </div>
+            <div class="d-flex align-items-right navbar-btns">
+                <button class="btn btn-outline-light" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="btn btn-outline-light" type="button">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </div>
+        </div>
     </div>
   </nav>
   <!-- Carousel -->
@@ -40,7 +68,6 @@
       </div>
       <img src="images/XDefiant_Logo.png" alt="XDefiant Logo" class="slide-logo">
     </div>
-    <!-- Carousel controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -63,68 +90,88 @@
     </div>
   </section>
   <!-- More games section -->
-  <section class="moregames-section">
+  <section class="moregames-section" style="position: relative; overflow: hidden;">
     <h3 class="text-center" style="padding-top: 1%; padding-bottom: 3%; font-weight: 800; font-size: 2.5rem; line-height: 3.125rem; color: black;">DÉCOUVREZ PLUS DE JEUX</h3>
     <div class="row games-carousel d-flex justify-content-center">
-      <div class="col game-card">
-        <img src="images/game1.jpeg" alt="Game 1" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/star-wars/outlaws" class="game-title">Star Wars Outlaws</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/star-wars/outlaws" class="game-link">
+                <img src="images/game1.jpeg" alt="Game 1" class="game-img">
+                <div class="game-title">Star Wars Outlaws</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+            </a>
         </div>
-      </div>
-      <div class="col game-card">
-        <img src="images/game2.jpeg" alt="Game 2" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/assassins-creed/shadows" class="game-title">Assassin's Creed Shadows</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
-          <i class="fa-brands fa-apple"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/assassins-creed/shadows" class="game-link">
+                <img src="images/game2.jpeg" alt="Game 2" class="game-img">
+                <div class="game-title">Assassin's Creed Shadows</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </a>
         </div>
-      </div>
-      <div class="col game-card">
-        <img src="images/game3.jpeg" alt="Game 3" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/xdefiant" class="game-title">XDEFIANT</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/xdefiant" class="game-link">
+                <img src="images/game3.jpeg" alt="Game 3" class="game-img">
+                <div class="game-title">XDEFIANT</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+            </a>
         </div>
-      </div>
-      <div class="col game-card">
-        <img src="images/game4.jpeg" alt="Game 4" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/anno/117-pax-romana" class="game-title">Anno 117: Pax Romana</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/anno/117-pax-romana" class="game-link">
+                <img src="images/game4.jpeg" alt="Game 4" class="game-img">
+                <div class="game-title">Anno 117: Pax Romana</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+            </a>
         </div>
-      </div>
-      <div class="col game-card">
-        <img src="images/game5.jpeg" alt="Game 5" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/avatar/frontiers-of-pandora" class="game-title">Avatar: Frontiers of Pandora</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
-          <i class="fa-brands fa-apple"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/avatar/frontiers-of-pandora" class="game-link">
+                <img src="images/game5.jpeg" alt="Game 5" class="game-img">
+                <div class="game-title">Avatar: Frontiers of Pandora</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </a>
         </div>
-      </div>
-      <div class="col game-card">
-        <img src="images/game6.jpeg" alt="Game 6" class="game-img">
-        <a href="https://www.ubisoft.com/fr-fr/game/skull-and-bones" class="game-title">Skull and Bones</a>
-        <div class="platform-logos">
-          <i class="fa-brands fa-xbox"></i>
-          <i class="fa-brands fa-playstation"></i>
-          <i class="fa-brands fa-windows"></i>
+        <div class="col game-card">
+            <a href="https://www.ubisoft.com/fr-fr/game/skull-and-bones" class="game-link">
+                <img src="images/game6.jpeg" alt="Game 6" class="game-img">
+                <div class="game-title">Skull and Bones</div>
+                <div class="platform-logos">
+                    <i class="fa-brands fa-xbox"></i>
+                    <i class="fa-brands fa-playstation"></i>
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+            </a>
         </div>
-      </div>
+        <button class="games-carousel-control-prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
+            <span class="games-carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="games-carousel-control-next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
+            <span class="games-carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <div id="promo-cta" class="row justify-content-center">
-      <a class="btn btn-carousel" href="https://playxdefiant.com/download" target="_blank" rel="noreferrer noopener">VOIR TOUS LES JEUX</a>
+        <a class="btn btn-carousel" href="https://playxdefiant.com/download" target="_blank" rel="noreferrer noopener">VOIR TOUS LES JEUX</a>
     </div>
   </section>
   <!-- News section -->
@@ -156,40 +203,193 @@
             <p class="news-date text-muted">3 octobre 2024</p>
             <h3 class="news-title" style="margin-bottom: 50px;">Prince of Persia 35th Anniversary - A Look Back at the Original Game</h3>
           </div>
-          <div class="small-container d-flex align-items-center mt-3">
+          <div class="small-container d-flex align-items-center mt-3 mb-5">
             <img src="images/news2.jpeg" alt="Small Image 1" class="small-image">
             <div class="small-text">
               <p class="news-date text-muted">3O septembre 2024</p>
-              <h4 class="news-title">Ubisoft patners with Soul Assembly for Just Dance VR: Welcome to Dancity</h4>
+              <h4 class="news-title">Ubisoft partners with Soul Assembly for Just Dance VR: Welcome to Dancity</h4>
             </div>
           </div>
         </div>
-
         <div class="col-md-6 right-column">
           <div class="small-image-row">
             <div class="small-image-container">
-              <img src="images/news2.jpeg" style="margin-bottom: 35px; margin-right: 20px;" alt="Small Image 2" class="small-image">
-              <p class="news-date text-muted">3 octobre 2024</p><br>
-              <h4 class="news-title">Small Image Title 2</h4>
+              <img src="images/news3.jpeg" style="margin-bottom: 50px; margin-right: 20px;" alt="Small Image 2" class="small-image">
+              <span class="small-image-text" style="display: flex; flex-direction: column; margin-top: 5px;">
+              <p class="news-date text-muted">3 octobre 2024</p>
+              <h4 class="news-title">Star Wars Outlaws™ - Become the Galaxy's Greatest Scoundrel on Ubisoft+</h4>
+              </span>
             </div>
             <div class="small-image-container">
-              <img src="images/news2.jpeg" style="margin-bottom: 35px; margin-right: 20px;" alt="Small Image 3" class="small-image">
+              <img src="images/news4.jpeg" style="margin-bottom: 50px; margin-right: 20px;" alt="Small Image 3" class="small-image">
+              <span class="small-image-text" style="display: flex; flex-direction: column; margin-top: 5px;">
               <p class="news-date text-muted">3 octobre 2024</p>
-              <h4 class="news-title">Small Image Title 3</h4>
+              <h4 class="news-title">Just Dance's New Music Packs Out Now</h4>
+              </span>
             </div>
             <div class="small-image-container">
-              <img src="images/news2.jpeg" style="margin-bottom: 35px; margin-right: 20px;" alt="Small Image 4" class="small-image">
-              <p class="news-date text-muted">3 octobre 2024</p>
-              <h4 class="news-title">Small Image Title 4</h4>
+              <img src="images/news5.jpeg" style="margin-bottom: 50px; margin-right: 20px;" alt="Small Image 4" class="small-image">
+              <span class="small-image-text" style="display: flex; flex-direction: column; margin-top: 5px;">
+                <p class="news-date text-muted">25 septembre 2024</p>
+                <h4 class="news-title">Brawlhalla x Mega Man™ Crossover Live Now</h4>
+              </span>
             </div>
           </div>
         </div>
       </div>
+      <div id="promo-cta" class="row justify-content-center mt-2">
+        <a class="btn btn-carousel" href="https://news.ubisoft.com/fr-fr/?_gl=1*8cmzyg*_gcl_au*MTI3NjEwNTMxMS4xNzI4MzcxNzYx*_ga*MTA0MDEyMjgwNi4xNzI4MzcxNzYy*_ga_C4N5020N2R*MTcyODQxMzc3My42LjEuMTcyODQxMzc3OS41NC4wLjA." 
+        target="_blank" rel="noreferrer noopener">TOUTE L'ACTU</a>
+      </div>
     </div>
   </section>
-  
+  <!-- Store section -->
+  <section class="store-section" style="margin-bottom: 2%;">
+    <h3 class="text-center" style="padding-bottom: 3%; font-weight: 800; font-size: 1.7rem; line-height: 3.125rem; color: black;">UBISOFT STORE</h3>
+    <div class="row store-carousel d-flex justify-content-center">
+      <div class="col store-card">
+        <a href="#" class="store-link">
+          <div class="store-img-wrapper">
+            <img src="images/game1.jpeg" alt="Game 1" class="store-img">
+            <div class="store-title">OBTENEZ LE JEU</div>
+          </div>
+        </a>
+      </div>
+      <div class="col store-card">
+        <a href="#" class="store-link">
+          <div class="store-img-wrapper">
+            <img src="images/game2.jpeg" alt="Game 2" class="store-img">
+            <div class="store-title">PRECOMMANDEZ ET OBTENEZ LA QUETE BONUS LAISSE POUR COMPTE</div>
+          </div>
+        </a>
+      </div>
+      <div class="col store-card" style="margin-bottom: 3%;">
+        <a href="#" class="store-link">
+          <div class="store-img-wrapper">
+            <img src="images/game4.jpeg" alt="Game 3" class="store-img">
+            <div class="store-title">AJOUTER A VOTRE LISTE DE SOUHAITS</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Ubisoft section -->
+  <section class="ubisoft">
+    <h3 class="text-center" style="padding-bottom: 1%; font-weight: 800; font-size: 1.7rem; line-height: 3.125rem; color: black;">AU CŒUR D'UBISOFT</h3>
+    <div class="row ubisoft d-flex justify-content-center">
+      <div class="col ubisoft-card">
+        <a href="#" class="ubisoft-link">
+          <div class="ubisoft-img-wrapper">
+            <img src="images/ubisoft1" alt="Ubisoft Forward 2024" class="ubisoft-img">
+            <div class="ubisoft-title">ANNONCE D'UBISOFT FORWARD 2024</div>
+          </div>
+        </a>
+      </div>
+      <div class="col ubisoft-card">
+        <a href="#" class="ubisoft-link">
+          <div class="ubisoft-img-wrapper">
+            <img src="images/ubisoft2" alt="Ubisoft Accessibility" class="ubisoft-img">
+            <div class="ubisoft-title">L'AVENIR DE L'ACCESSIBILITE CHEZ UBISOFT</div>
+          </div>
+        </a>
+      </div>
+      <div class="col ubisoft-card">
+        <a href="#" class="ubisoft-link">
+          <div class="ubisoft-img-wrapper">
+            <img src="images/ubisoft3" alt="Ubisoft Fashion" class="ubisoft-img">
+            <div class="ubisoft-title">LA MODE FUTURISTE DANS JUST DANCE ET ROLLER CHAMPIONS</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Fans Section -->
+  <section class="fans-section">
+    <div class="row fans-content">
+      <div class="col fans-left-column" style="padding-top: 10%;">
+        <h3 class="text-left" style="padding-bottom: 3%; font-weight: 800; font-size: 2.4rem; line-height: 3.125rem; color: black;">Kits de fan Ubisoft, fonds d'écran et plus encore !</h3>
+        <div id="promo-cta" class="row justify-content-left">
+          <a class="btn btn-carousel" href="https://playxdefiant.com/download" target="_blank" rel="noreferrer noopener">EN SAVOIR PLUS</a>
+        </div>
+      </div>
+      <div class="col fans-right-column">
+        <img src="images/ubisoft_fans.jpeg" alt="Fans Image" class="fans-img">
+      </div>
+    </div>
+    <div class="triangle"></div>
+  </section>
+  <!-- Connect Section -->
+  <section class="connect-section">
+    <div class="row connect-content">
+      <div class="col connect-left-column">
+        <img src="images/ubisoft-connect.png" alt="Connect Image" class="connect-img">
+      </div>
+      <div class="col connect-right-column">
+        <h3 class="text-left" style="font-weight: 700; font-size: 2.4rem; line-height: 3.125rem; color: white;">Ubisoft Connect</h3>
+        <h3 class="text-left" style="padding-bottom: 3%; font-weight: 300; font-size: 1.7rem; line-height: 3.125rem; color: white;">Tous vos jeux, amis et avantages au même endroit. 
+          <strong style="font-weight: 700;"></span>PC | Console | Mobile</strong></h3>          
+        <div id="promo-cta" class="row justify-content-left">
+          <a class="btn btn-blue" href="https://playxdefiant.com/download" target="_blank" rel="noreferrer noopener">OBTENIR UBISOFT CONNECT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="social-media-section">
+    <p style="font-size: small; font-weight: 200; margin-left: 3%; padding-top: 1%;">
+      Visiter nos autres réseaux sociaux</p>
+    <div class="social-icons" style="margin-right: 18.2%;">
+      <a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.discord.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-discord"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div> 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top" style="padding-bottom: 3%;">
+      <div class="footer-column" style="text-align: left; margin-left: 5%;">
+        <img src="images/ubisoft_logo.png" alt="Ubisoft Logo" class="ubisoft-logo">
+        <span style="font-size: larger; font-weight: 600;">UBISOFT</span>
+      </div>
+      <div class="footer-column">
+        <a class="btn btn-download" href="https://playxdefiant.com/download" target="_blank" rel="noreferrer noopener">TÉLÉCHARGER UBISOFT CONNECT</a>
+      </div>
+      <div class="footer-column" style="text-align: right; margin-right: 5%;">
+        <i class="fas fa-globe" style="font-size: 1.5rem;"></i>
+        <span style="font-size: large; font-weight: 600;">FRANÇAIS</span><i class="fa-solid fa-chevron-down" style="margin-left: 10px;"></i>
+      </div>
+    </div>
+
+    <div class="footer-bottom row">
+      <div class="col-lg-3 col-md-4 col-sm-12" style="display: flex; flex-direction: column;">
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">CONFIDENTIALITE</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">CONDITIONS D'UTILISATION</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">MENTIONS LÉGALES</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">PARAMÉTRER LES COOKIES</a>
+      </div>
+      <div class="col-lg-2 col-md-1 col-sm-12" style="display: flex; flex-direction: column;">
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">UBISOFT CONNECT</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">HELP</a>        
+      </div>
+      <div class="col-lg-2 col-md-1 col-sm-12" style="display: flex; flex-direction: column;">
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">INVESTISSEURS</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">PRESSE</a>   
+      </div>
+      <div class="col-lg-2 col-md-1 col-sm-12" style="display: flex; flex-direction: column;">
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">A PROPOS</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">CARRIERE</a>
+        <a href="#" target="_blank" rel="noreferrer noopener" class="footer-link">STUDIOS & BUREAUX</a>      
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12" style="text-align: right; font-size: x-small;">© 2024 Ubisoft Entertainment. All Rights Reserved. 
+        Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.
+      </div>
+    </div>
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

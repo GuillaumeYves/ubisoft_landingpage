@@ -1,213 +1,600 @@
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    background-color: black;
+height: 50px;
+background-color: black;
+}
+
+.navbar-nav {
+display: flex;
+align-items: center;
+gap: 15%;
 }
 
 .navbar .ubisoft-logo {
-    height: 50px;
-    filter: invert(100%);
+height: 45px;
+margin-right: -10px;
+filter: invert(100%);
 }
 
-.carousel {
-    padding-top: 50px;
+.navbar-brand {
+padding-left: 3%;
+padding-right: 6%;
+}
+
+.nav-link {
+color: white;
+font-size: medium;
+font-weight: 500;
+}
+
+.nav-link:hover {
+background-color: white;
+color: black;
+}
+
+.nav-download {
+color: white;
+font-size: medium;
+font-weight: 500;
+text-decoration: none;
+}
+
+.download-icon {
+padding-left: 5px;
+font-size: small;
+}
+
+.nav-download-container {
+margin-left: 20%;
+}
+
+.navbar-btns {
+padding-right: 3%;
+}
+
+.navbar .btn {
+border: none;
+color: white;
+background-color: transparent;
+}
+
+.navbar .btn:hover {
+color: rgb(179, 179, 179);
 }
 
 /* Carousel */
+.carousel {
+padding-top: 50px;
+}
+
 .carousel-inner {
-    width: 100%; 
-    height: 100vh;
+width: 100%; 
+height: 120vh;
 }
 
 .carousel-item {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+height: 100%;
+object-fit: cover;
+width: 100%;
 }
 
 .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+height: 100%;
+width: 100%;
 }
 
 .btn-carousel {
-    background-color: rgb(255, 0, 136);
-    color: white;
-    font-weight: bold;
-    font-size: larger;
-    border-radius: 50px 50px;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    padding: 0.9rem 1.5rem;
-    width: auto;
+background-color: rgb(255, 0, 136);
+color: white;
+font-weight: bold;
+font-size: larger;
+border-radius: 50px 50px;
+margin-left: 3%;
+margin-right: 3%;
+margin-bottom: 3%;
+padding: 0.9rem 2.5rem;
+width: auto;
 }
 
 .btn-carousel:hover {
-    background-color: #ffffff;
-    color: rgb(255, 0, 136);
-    border-color: rgb(255, 0, 136);
+background-color: #ffffff;
+color: rgb(255, 0, 136);
+border-color: rgb(255, 0, 136);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+height: 30px;
+width: 30px;
+color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+width: 70px;
+height: 60px;
+background-color: rgb(67, 67, 67);
+position: absolute;
+top: calc(100% - 80px);
+z-index: 1;
+}
+
+.carousel-control-prev {
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+}
+
+.carousel-control-next {
+border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+background-color: rgb(109, 109, 109);
 }
 
 .slide-logo {
-    filter: invert(100%);
-    max-width: 300px;
-    position: absolute;
-    bottom: 5vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+filter: invert(100%);
+max-width: 300px;
+position: absolute;
+bottom: 15%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 999;
 }
 
 /* Promo section */
 .promo-section {
-    position: relative;
-    width: 100%;
-    height: 40vh;
+position: relative;
+width: 100%;
+height: 40vh;
 }
 
 .promo-image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+filter: brightness(40%);
 }
 
 .promo-content {
-    position: relative;
-    z-index: 1;
-    padding: 2%;
-    color: white;
+position: relative;
+z-index: 1;
+padding: 2%;
+color: white;
 }
 
 .promo-title {
-    font-weight: 500;
-    font-size: 1.6rem;
-    padding-left: 15%;
-    padding-right: 15%;
+font-weight: 500;
+font-size: 1.6rem;
+padding-left: 15%;
+padding-right: 15%;
 }
 
 .promo-description, .promo-note {
-    font-weight: 300;
-    font-size: 1.1rem;
-    margin-top: 10px;
+font-weight: 300;
+font-size: 1.1rem;
+margin-top: 10px;
 }
 
 .promo-note {
-    font-size: 0.8rem;
-    margin-top: -10px;
+font-size: 0.8rem;
+margin-top: -10px;
 }
 
 /* More games section */
 .moregames-section {
-    background-color: rgb(234, 234, 234);
-    position: relative;
-    padding: 2%;
-    width: 100%;
+background-color: rgb(234, 234, 234);
+position: relative;
+padding: 2%;
+width: 100%;
 }
 
 .games-carousel {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
 }
 
 .game-card {
-    text-align: center;
-    margin-bottom: 2%;
-    flex: 0 0 5%;
+text-align: center;
+margin-bottom: 2%;
+flex: 0 0 5%;
+}
+
+.game-link {
+display: block;
+text-decoration: none;
+color: inherit;
+}
+
+.game-link:hover {
+text-decoration: underline;
 }
 
 .game-img {
-    max-width: 190px;
-    max-height: 360px;
-    display: block;
-    object-fit: cover;
+max-width: 190px;
+max-height: 360px;
+display: block;
+object-fit: cover;
 }
 
 .game-title {
-    margin-top: 10px;
-    font-size: large;
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
-}
-
-.game-title :hover {
-    text-decoration: underline;
+margin-top: 10px;
+font-size: large;
+font-weight: 700;
+color: black;
 }
 
 .platform-logos {
-    margin-top: 10px;
-    filter: invert(40%);
+margin-top: 10px;
+filter: invert(40%);
 }
+
+.games-carousel-control-prev,
+.games-carousel-control-next {
+width: 70px;
+height: 60px;
+background-color: rgba(234, 234, 234);
+position: absolute;
+top: calc(100% - 130px);
+z-index: 1;
+}
+
+.games-carousel-control-prev {
+left: 0px;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+}
+
+.games-carousel-control-next {
+right: 0px;
+border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+}
+
 
 .game-category {
-    color: rgb(255, 0, 136);
-    font-weight: 400;
-    text-decoration: none;
+color: rgb(255, 0, 136);
+font-weight: 400;
+text-decoration: none;
 }
 
+/* News section */
 .news-section {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0;
-  }
-  
-  .left-column {
-    text-align: left;
-  }
-  
-  .left-large-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .news-date {
-    font-size: 0.8rem;
-  }
-  
-  .news-title {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: black;
-  }
-  
-  .small-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .small-image {
-    width: 350px;
-    height: 200px;
-  }
-  
-  .small-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-  }
-  
-  .right-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .small-image-row {
-    display: flex; 
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .small-image-container {
-    display: flex;
-    align-items: left;
-  }
-  
+width: 100%;
+margin: 0 auto;
+padding: 10px 0;
+}
+
+.left-column {
+text-align: left;
+}
+
+.left-large-image {
+width: 100%;
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.news-date {
+font-size: 0.8rem;
+}
+
+.news-title {
+font-size: 1.3rem;
+font-weight: 800;
+color: black;
+}
+
+.news-title:hover {
+text-decoration: underline;
+}
+
+.small-image {
+width: 350px;
+height: 200px;
+}
+
+.small-text {
+align-self: flex-start;
+margin-top: 5px;
+margin-left: 15px;
+}
+
+.small-image-container {
+display: flex;
+align-items: left;
+}
+
+/* Store section */
+.store-section {
+background-color: rgb(234, 234, 234);
+position: relative;
+padding: 2%;
+margin: 0 auto;
+}
+
+.store-carousel {
+display: flex;
+justify-content: space-between;
+gap: 2%;
+}
+
+.store-card {
+width: 80%;
+position: relative;
+}
+
+.store-link {
+text-decoration: none;
+color: inherit;
+display: block;
+}
+
+.store-img-wrapper {
+position: relative;
+width: 100%;
+}
+
+.store-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.store-title {
+font-weight: 800;
+font-size: 1.5rem;
+line-height: 2rem;
+color: white;
+text-align: center;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0) 100%);
+height: 60%;
+padding: 15px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.store-link:hover .store-title {
+text-decoration: underline;
+}
+
+/* Ubisoft Section */
+.ubisoft {
+position: relative;
+margin: 0 auto;
+padding: 1%;
+padding-bottom: 4%;
+}
+
+.ubisoft-card {
+width: 80%;
+position: relative;
+border-radius: 6%;
+overflow: hidden;
+}
+
+.ubisoft-link {
+text-decoration: none;
+color: inherit;
+display: block;
+position: relative;
+}
+
+.ubisoft-img-wrapper {
+position: relative;
+width: 100%;
+}
+
+.ubisoft-img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.ubisoft-title {
+font-weight: 800;
+font-size: 1.3rem;
+line-height: 2rem;
+color: white;
+text-align: center;
+padding: 5%;
+height: 30%;
+background-color: rgba(1, 1, 1, 0.447);
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+.ubisoft-link:hover .ubisoft-title {
+text-decoration: underline;
+}
+
+/* Fans Section */
+.fans-section {
+background-color: rgb(234, 234, 234);
+position: relative;
+margin: 0 auto;
+width: 100%;
+padding: 2%;
+}
+
+.fans-content {
+display: flex;
+justify-content: space-between;
+align-items: left;
+padding: 2%;
+margin: 0 auto;
+}
+
+.fans-right-column {
+flex: 1.5;
+text-align: right;
+}
+
+.fans-img {
+max-width: 100%;
+height: auto;
+}
+
+.triangle {
+position: absolute;
+bottom: -30px;
+left: 50%;
+transform: translateX(-50%);
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent; 
+border-top: 30px solid rgb(234, 234, 234);
+z-index: 999;
+}
+
+/* Connect Section */
+.connect-section {
+background-color: rgb(0, 17, 42);
+position: relative;
+margin: 0 auto;
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 2%;
+padding-bottom: 1%;
+}
+
+.connect-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.connect-right-column {
+flex: 1.5;
+}
+
+.connect-img {
+max-width: 100%;
+height: auto;
+}
+
+.social-media-section {
+background-color: black;
+padding: 0.5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+}
+
+.social-icons {
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+.social-icons a {
+background-color: white;
+color: black;
+margin-left: 15px;
+font-size: 1rem;
+padding: 8px;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+}
+
+.social-icons a:hover {
+background-color: lightgray;
+}
+
+.btn-blue {
+background-color: rgb(0, 94, 255);
+color: white;
+font-weight: bold;
+font-size: larger;
+border-radius: 50px 50px;
+margin-left: 3%;
+margin-right: 3%;
+padding: 0.9rem 2.5rem;
+width: auto;
+}   
+
+.btn-blue:hover {
+background-color: #ffffff;
+color: rgb(0, 94, 255);
+border-color: rgb(0, 94, 255);
+}
+/* Footer Styles */
+.footer {
+background-color: rgb(31, 31, 31);
+color: white;
+padding: 2%;
+position: fixed bottom;
+bottom: 0;
+left: 0;
+}
+
+.footer-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-column {
+flex: 1;
+text-align: center;
+}
+
+.footer .ubisoft-logo {
+height: 60px;
+margin-right: -10px;
+filter: invert(100%);
+}
+
+.btn-download {
+background-color: rgb(49, 49, 49);
+color: white;
+font-weight: 500;
+font-size: large;
+border-radius: 50px 50px;
+margin-left: 3%;
+margin-right: 3%;
+padding: 0.9rem 2.5rem;
+width: auto;
+}   
+
+.btn-download:hover {
+background-color: rgb(90, 90, 90);
+color: white;
+}
+
+.footer-bottom {
+display: flex;
+justify-content: space-between;
+margin-top: 1%;
+padding-left: 3%;
+padding-right: 3%;
+}
+
+.footer-link {
+text-align: left;
+color: white;
+text-decoration: none;
+font-weight: 600;
+font-size: medium;
+line-height: 230%;
+}
+
+.footer-link:hover {
+text-decoration: underline;
+}
+
